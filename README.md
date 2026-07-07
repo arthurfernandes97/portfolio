@@ -22,7 +22,7 @@ Aqui estão reunidos laboratórios práticos, scripts e anotações voltados pri
 |:---|:---|:---:|
 | [`laboratorios-redes`](./laboratorios-redes) | Laboratórios de Redes de Computadores utilizando Cisco Packet Tracer. | 🚧 Em progresso |
 | [`analise-trafego`](./analise-trafego) | Estudos de captura e análise de pacotes com Wireshark. | 🚧 Em progresso |
-| [`scripts-linux`](./scripts-linux) | Scripts de automação e administração em Debian e CentOS. | 🚧 Em progresso |
+| [`laboratorios-linux`](./laboratorios-linux) | Scripts de automação e administração em Debian e CentOS. | 🚧 Em progresso |
 | [`certificados`](./certificados) | Certificados e cursos concluídos durante a graduação e estudos complementares. | 📚 Em atualização |
 
 > Esta lista será atualizada conforme novos projetos forem desenvolvidos.
