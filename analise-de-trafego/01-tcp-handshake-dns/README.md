@@ -20,6 +20,8 @@ Isso reduziu de 107 pacotes para 29, deixando só o que interessava pra análise
 <img src="images/01-filtragem.png" width="1000">
 </p>
 
+---
+
 ## Fluxo de Análise
 
 ### 1. Resolução DNS
@@ -37,6 +39,8 @@ Antes de conectar no servidor, o cliente precisa saber o IP do domínio. Pra iss
 <img src="images/03-query-aaaa.png" width="1000">
 </p>
 
+---
+
 ### 2. Three-Way Handshake
 Com o IP resolvido, começa o handshake com o servidor na porta 80 (HTTP):
 
@@ -47,6 +51,8 @@ Com o IP resolvido, começa o handshake com o servidor na porta 80 (HTTP):
 <p align="center">
 <img src="images/04-sincronizacao.png" width="1000">
 </p>
+
+---
 
 ### 3. Requisição HTTP
 Com a conexão estabelecida, o cliente manda a primeira requisição. Na linha 29 dá pra ver:
@@ -59,6 +65,8 @@ Como a comunicação utiliza HTTP na porta 80 (sem TLS), o conteúdo trafega em 
 <p align="center">
 <img src="images/05-http.png" width="1000">
 </p>
+
+---
 
 ## Tecnologias utilizadas
 - **Wireshark:** ferramenta principal para inspeção de pacotes.
