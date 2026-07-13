@@ -17,6 +17,8 @@ O roteador fica conectado a dois switches, cada um levando duas VLANs. A ideia �
 <img src="images/01-topologia.png" width="850">
 </p>
 
+---
+
 ## Configuração dos switches
 Em cada switch, criei as VLANs, coloquei as portas dos hosts em modo access na VLAN correspondente, e configurei a porta que liga ao roteador como trunk, permitindo só as VLANs daquele lado.
 
@@ -26,11 +28,15 @@ Em cada switch, criei as VLANs, coloquei as portas dos hosts em modo access na V
 <img src="images/02-config-switch1.png" width="950">
 </p>
 
+---
+
 **Switch 2 (TI e Servidor):**
 
 <p align="center">
 <img src="images/03-config-switch2.png" width="950">
 </p>
+
+---
 
 ## Configuração do roteador
 Criei uma subinterface por VLAN, cada uma com `encapsulation dot1Q` e o IP de gateway daquela rede. Nas subinterfaces das VLANs de cliente (10, 20 e 30), adicionei o `ip helper-address` apontando pro IP do servidor DHCP, pra encaminhar o broadcast das requisições até ele.
@@ -66,6 +72,8 @@ Configurei o IP estático do servidor, e os três pools (um por VLAN de cliente)
 <img src="images/06-config-servidor-dhcp.png" width="1000">
 </p>
 
+---
+
 ## Testes iniciais
 VLAN 10 e VLAN 20 pegaram IP via DHCP sem problema, confirmando que o relay estava funcionando nessas duas.
 
@@ -76,6 +84,8 @@ VLAN 10 e VLAN 20 pegaram IP via DHCP sem problema, confirmando que o relay esta
 <p align="center">
 <img src="images/08-teste-dhcp-vlan20.png" width="1000">
 </p>
+
+---
 
 ## Troubleshooting: VLAN 30 sem IP
 Na VLAN 30 (TI), os hosts não conseguiram pegar IP:
@@ -104,6 +114,8 @@ ip helper-address 172.16.40.2
 <img src="images/10-solucionando-erro.png" width="600">
 </p>
 
+---
+
 ## Teste da VLAN 30 corrigida
 Depois do ajuste, os hosts da VLAN 30 conseguiram pegar IP normalmente.
 
@@ -111,12 +123,16 @@ Depois do ajuste, os hosts da VLAN 30 conseguiram pegar IP normalmente.
 <img src="images/11-teste-dhcp-vlan30.png" width="1000">
 </p>
 
+---
+
 ## Teste de conectividade final
 Com as 4 redes funcionando, testei ping do PC1 (VLAN 10) até um host de cada VLAN, incluindo o servidor. Todos os pings tiveram sucesso, confirmando que o roteamento entre VLANs e o DHCP Relay estão funcionando de ponta a ponta.
 
 <p align="center">
 <img src="images/12-teste-conectividade-final.png" width="1000">
 </p>
+
+---
 
 ## Conclusão
 
