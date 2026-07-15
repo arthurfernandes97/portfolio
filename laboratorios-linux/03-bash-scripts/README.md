@@ -132,7 +132,7 @@ done
 
 ![Teste opção 4](./images/06-teste-opcao-4.png)
 
-Nesse teste dá para ver dois arquivos de backup já acumulados em `~/backups`, cada um com timestamp diferente. Isso confirma que o `mkdir -p` não recria nem duplica a pasta a cada execução, só garante que ela exista. Quem gera um arquivo novo por vez é o `tar`.
+Nesse teste dá pra ver dois arquivos de backup já acumulados em `~/backups`, cada um com timestamp diferente. Isso confirma que o `mkdir -p` não recria nem duplica a pasta a cada execução, só garante que ela exista. Quem gera um arquivo novo por vez é o `tar`.
 
 ---
 
