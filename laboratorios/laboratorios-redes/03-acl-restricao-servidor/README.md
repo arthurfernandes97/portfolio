@@ -1,7 +1,7 @@
 <h1 align="center">ACL entre VLANs: Restrição de Acesso ao Servidor</h1>
 
 ## Objetivo
-Neste laboratório reaproveitei a topologia do lab de [DHCP Relay com Múltiplas VLANs](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/02-dhcp-relay-vlans), usando a mesma estrutura de rede para implementar controle de acesso entre as VLANs.
+Neste laboratório reaproveitei a topologia do lab de [DHCP Relay com Múltiplas VLANs](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/02-dhcp-relay-vlans), dando continuidade na mesma estrutura de rede para implementar controle de acesso entre as VLANs.
 
 A ideia foi impedir que Vendas e Administração acessassem a VLAN do servidor usando ACLs estendidas, mantendo esse acesso liberado somente para TI. No fim, também verifiquei se a comunicação entre as outras VLANs e o funcionamento do DHCP Relay continuavam normais depois da aplicação das regras.
 
