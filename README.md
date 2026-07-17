@@ -16,7 +16,7 @@ Laboratórios de redes de computadores usando Cisco Packet Tracer: VLANs, roteam
 - [03 - ACL: Restrição de Acesso ao Servidor](./laboratorios/laboratorios-redes/03-acl-restricao-servidor)
 
 ## 🦈 Análise de Tráfego
-Estudos de captura e análise de pacotes com Wireshark, incluindo capturas próprias e capturas de referência da comunidade.
+Estudos de captura e análise de pacotes com Wireshark.
 
 - [01 - TCP Handshake e Resolução DNS](./laboratorios/analise-de-trafego/01-tcp-handshake-dns)
 - [02 - Análise de Latência TCP: Delayed ACK](./laboratorios/analise-de-trafego/02-analise-latencia-tcp)
