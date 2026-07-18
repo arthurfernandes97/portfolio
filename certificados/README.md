@@ -8,6 +8,7 @@ Este repositório reúne os certificados dos cursos concluídos durante minha fo
 | GNU/Linux | Udemy |
 | Redes de Computadores TCP/IP e Wireshark | Udemy |
 | Cibersegurança | Udemy |
+| Git & GitHub | Cursa |
 
 ---
 
@@ -32,3 +33,9 @@ Este repositório reúne os certificados dos cursos concluídos durante minha fo
 ## Cibersegurança
 
 ![Cibersegurança](images/ciberseguranca-udemy.png)
+
+---
+
+## Git & GitHub
+
+![Git & GitHub](images/git-github.png)
