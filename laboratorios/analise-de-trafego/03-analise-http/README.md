@@ -124,11 +124,10 @@ Uma coisa que não esperava foi que o DNS não aparecesse antes do handshake, co
 O outro ponto que mais me chamou atenção foi a retransmissão suspeita. Não esperava encontrar isso numa captura que parecia simples, e foi só reparando na cor diferente da linha que fui atrás de entender o que o Wireshark estava sinalizando.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

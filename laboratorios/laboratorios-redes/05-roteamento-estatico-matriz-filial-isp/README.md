@@ -173,11 +173,10 @@ Esse laboratório me mostrou como o roteamento estático se comporta numa topolo
 O ponto mais importante foi a correção da ACL. Uma ACL que bloqueia algumas origens e libera o resto no final não é a mesma coisa que uma ACL que permite só uma origem específica. A primeira deixa brecha pra qualquer rede nova que apareça depois, como aconteceu com a Filial. Além disso, aprendi que o lugar onde a ACL é aplicada importa tanto quanto a lógica dela. Ela precisa estar no ponto por onde todo o tráfego destinado ao servidor obrigatoriamente passa, não apenas na origem que motivou a regra originalmente.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

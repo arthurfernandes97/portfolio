@@ -137,9 +137,7 @@ Caso queira reproduzir a configuração, o arquivo do Cisco Packet Tracer está 
 
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

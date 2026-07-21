@@ -128,11 +128,10 @@ Esse lab mostrou como usar ACL estendida para restringir acesso entre redes espe
 O ponto mais interessante foi o DHCP não quebrar, mesmo eu esperando que quebrasse. Entender que a ACL avalia o pacote de broadcast antes do `ip helper-address` reescrever ele pra unicast me ajudou a enxergar melhor a ordem em que essas coisas acontecem dentro do roteador.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

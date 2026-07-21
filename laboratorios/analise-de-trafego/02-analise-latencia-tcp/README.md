@@ -96,11 +96,10 @@ Comecei esse lab suspeitando de rede lenta ou servidor sobrecarregado, mas ao co
 Vale registrar: os conceitos de RTT, iRTT e Delayed ACK eu não conhecia antes desse lab. Entendi estudando enquanto analisava essa captura, com apoio de material e explicações que fui buscando conforme surgiam as dúvidas, principalmente por que 0.03s era um valor alto pra rede local, e por que a demora estava no ACK e não no dado em si. O que não veio de fora foi o processo: errar a leitura do filtro de primeira, voltar pra reanalisar sem filtro, e testar num segundo pacote antes de aceitar a explicação.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

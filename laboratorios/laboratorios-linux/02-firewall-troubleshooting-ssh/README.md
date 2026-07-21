@@ -96,11 +96,10 @@ Esse lab deixou claro que o `firewalld` controla direto quais serviços consegue
 Um detalhe que vale registrar. No meio do processo, tentei remover o serviço usando SSH maiúsculo (`--remove-service=SSH`), e o comando "funcionou" sem erro, mas na verdade não removeu nada. O `firewalld` diferencia maiúsculo de minúsculo nos nomes de serviço e o nome real é `ssh`. Só percebi o problema porque a conexão continuou funcionando depois do "bloqueio", o que não devia acontecer.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

@@ -173,11 +173,10 @@ Esse laboratório foi meu primeiro contato com Bash Script. A lógica de loop, c
 Também aprendi que `mkdir -p` é seguro de rodar toda vez, mesmo se a pasta já existir, e que usar `tar -C <dir> <alvo>` evita guardar caminho absoluto dentro do backup, o que é mais portável se eu precisar restaurar isso em outra máquina.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)

@@ -143,11 +143,10 @@ Esse lab me ajudou a entender na prática a diferença entre analisar HTTP puro 
 Também entendi que o protocolo da captura é SSLv3. Ao pesquisar, aprendi que ele é o antecessor do TLS. Hoje esse protocolo está obsoleto e não aparece mais em tráfego real. A segunda conexão TLS, com o navegador buscando recursos adicionais da página (um deles retornando 404), reforçou como uma navegação HTTPS "simples" na verdade envolve várias conexões e requisições separadas.
 
 ## Autor
+
 **Arthur Fernandes**
 
-Estudante de Ciência da Computação
-
-Focado em Infraestrutura, Redes de Computadores e GNU/Linux.
+Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)
