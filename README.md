@@ -43,8 +43,8 @@ Estudos de captura e análise de pacotes utilizando Wireshark.
 Laboratórios práticos de instalação, configuração, administração e troubleshooting em sistemas Windows.
 
 - [01 - Configuração de Estação Windows 11 para Novo Colaborador](./laboratorios/laboratorios-windows/01-configuracao-estacao-windows11)
-- [02 - Instalação e Preparação de um Servidor Windows Server 2025](./laboratorios/laboratorios-windows/02-base-windows-server-2025)
-
+- [02 - Implantação do Windows Server 2025 como Controlador de Domínio](./laboratorios/laboratorios-windows/02-windows-server-active-directory)
+  
 ## 🐧 Laboratórios Linux
 
 Laboratórios práticos de administração, permissões, firewall e automação em GNU/Linux utilizando Debian e CentOS.

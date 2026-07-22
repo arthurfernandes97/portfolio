@@ -83,13 +83,11 @@ Primeiro alterei o nome do computador para **SRV-TI-01**. Depois renomeei as int
 
 <p align="center"><img src="imagens/14-renomeando-servidor.png" width="400"></p>
 
-<p align="center"><img src="imagens/15-renomeando-adaptadores-rede.png" width="850"></p>
+<p align="center"><img src="imagens/15-configuracao-ip-lan.png" width="850"></p>
 
-<p align="center"><img src="imagens/16-configuracao-ip-lan.png" width="850"></p>
+<p align="center"><img src="imagens/16-ipconfig-all.png" width="850"></p>
 
-<p align="center"><img src="imagens/17-ipconfig-all.png" width="850"></p>
-
-<p align="center"><img src="imagens/18-teste-ping.png" width="850"></p>
+<p align="center"><img src="imagens/17-teste-ping.png" width="850"></p>
 
 ---
 
@@ -99,7 +97,7 @@ Com a configuração inicial concluída, utilizei o **Server Manager** para inst
 
 Durante esse processo o Windows Server também adicionou automaticamente os recursos necessários para o funcionamento do serviço.
 
-<p align="center"><img src="imagens/19-instalacao-role-ad-ds.png" width="750"></p>
+<p align="center"><img src="imagens/18-instalacao-role-ad-ds.png" width="750"></p>
 
 ---
 
@@ -109,7 +107,7 @@ Após instalar a função **AD DS**, promovi o servidor a **Controlador de Domí
 
 Floresta é o nível mais alto da estrutura do Active Directory. Ela funciona como um contêiner que agrupa um ou mais domínios, e é dentro dela que ficam as configurações de segurança e os relacionamentos de confiança compartilhados entre todos os domínios que fizerem parte da mesma estrutura. Como esse é o primeiro servidor do ambiente, foi necessário criar uma nova floresta, pois ainda não existia um domínio ao qual ele pudesse ser integrado.
 
-<p align="center"><img src="imagens/20-criacao-floresta-empresa-local.png" width="750"></p>
+<p align="center"><img src="imagens/19-criacao-floresta-empresa-local.png" width="750"></p>
 
 ---
 
@@ -117,9 +115,9 @@ Floresta é o nível mais alto da estrutura do Active Directory. Ela funciona co
 
 Depois da promoção e do reinício do sistema, realizei o primeiro logon utilizando a conta de administrador do domínio e confirmei que o servidor já fazia parte do domínio criado.
 
-<p align="center"><img src="imagens/21-primeiro-logon-dominio.png" width="850"></p>
+<p align="center"><img src="imagens/20-primeiro-logon-dominio.png" width="850"></p>
 
-<p align="center"><img src="imagens/22-servidor-pronto-active-directory.png" width="850"></p>
+<p align="center"><img src="imagens/21-servidor-pronto-active-directory.png" width="850"></p>
 
 ---
 
@@ -129,7 +127,7 @@ Com toda a configuração concluída, criei um snapshot da máquina virtual.
 
 Esse snapshot servirá como ponto de restauração para os próximos laboratórios, permitindo retornar rapidamente ao servidor já configurado como Controlador de Domínio caso seja necessário.
 
-<p align="center"><img src="imagens/23-snapshot.png" width="850"></p>
+<p align="center"><img src="imagens/22-snapshot.png" width="850"></p>
 
 ---
 
