@@ -44,7 +44,8 @@ Laboratórios práticos de instalação, configuração, administração e troub
 
 - [01 - Configuração de Estação Windows 11 para Novo Colaborador](./laboratorios/laboratorios-windows/01-configuracao-estacao-windows11)
 - [02 - Implantação do Windows Server 2025 como Controlador de Domínio](./laboratorios/laboratorios-windows/02-windows-server-active-directory)
-  
+- [03 - Organização de Usuários e Grupos no Active Directory](./laboratorios/laboratorios-windows/03-organizacao-usuarios-grupos-active-directory)
+
 ## 🐧 Laboratórios Linux
 
 Laboratórios práticos de administração, permissões, firewall e automação em GNU/Linux utilizando Debian e CentOS.
