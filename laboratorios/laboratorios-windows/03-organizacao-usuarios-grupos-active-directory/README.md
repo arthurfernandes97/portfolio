@@ -70,13 +70,13 @@ Para evitar configurar cada usuário manualmente, criei uma conta padrão desabi
 Em cada conta configurei previamente horários de logon, restrição de estações (`Log On To`) e demais opções da conta. Dessa forma, todos os usuários do mesmo departamento já são criados com as mesmas configurações.
 
 <p align="center">
-  <img src="imagens/04-criacao-usuario-padrao.png" width="650">
+  <img src="imagens/04-criacao-usuario-padrao.png" width="850">
 </p>
 
 ### Resultado das contas padrão criadas para cada departamento:
 
 <p align="center">
-  <img src="imagens/05-contas-padrao-criadas.png" width="450">
+  <img src="imagens/05-contas-padrao-criadas.png" width="300">
 </p>
 
 ---
@@ -88,7 +88,7 @@ Como a Diretoria possui apenas dois usuários, optei por criá-los manualmente e
 Arthur Fernandes (Fundador e Diretor) e Carlos Martins (Sócio Diretor — nome fictício) representam a Diretoria, então deixei o logon liberado para qualquer estação do domínio.
 
 <p align="center">
-  <img src="imagens/06-usuario-diretoria.png" width="850">
+  <img src="imagens/06-usuario-diretoria.png" width="1000">
 </p>
 
 <p align="center">
@@ -104,13 +104,13 @@ Com as contas padrão prontas, utilizei o recurso **Copy** para criar os usuári
 Na OU `TI`, utilizei o campo **Description** para identificar quais usuários pertencem à equipe de Infraestrutura e quais fazem parte do Suporte Técnico.
 
 <p align="center">
-  <img src="imagens/08-copia-padrao.png" width="850">
+  <img src="imagens/08-copia-padrao.png" width="1000">
 </p>
 
 ### Resultado final dos usuários criados:
 
 <p align="center">
-  <img src="imagens/09-usuarios-criados-ou.png" width="750">
+  <img src="imagens/09-usuarios-criados-ou.png" width="850">
 </p>
 
 ---
@@ -122,7 +122,7 @@ Criei todos os grupos como **Global** e **Security**. Cada departamento recebeu 
 Não adicionei as contas padrão aos grupos, já que elas servem apenas como modelo para criação dos usuários.
 
 <p align="center">
-  <img src="imagens/10-criacao-grupo-administracao.png" width="750">
+  <img src="imagens/10-criacao-grupo-administracao.png" width="850">
 </p>
 
 ### Estrutura final de departamentos e grupos:
