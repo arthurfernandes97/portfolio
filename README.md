@@ -15,7 +15,7 @@ Este repositório reúne laboratórios práticos que venho desenvolvendo enquant
 |---|---|
 | Redes | Cisco IOS, VLAN, DHCP Relay, ACL, Port Security, Roteamento Estático |
 | Análise de Tráfego | Wireshark, TCP/IP, DNS, HTTP/HTTPS |
-| Windows | Windows 11, Windows Server 2025 |
+| Windows | Windows 11, Windows Server 2025, Active Directory (AD DS) |
 | Linux | Debian, CentOS, firewalld, Bash Script |
 | Ferramentas | Git, GitHub, VirtualBox |
 
@@ -40,11 +40,10 @@ Estudos de captura e análise de pacotes utilizando Wireshark.
 
 ## 🪟 Laboratórios Windows
 
-Laboratórios práticos de instalação, configuração, administração e troubleshooting em sistemas Windows.
+Laboratórios práticos de administração de sistemas Windows, incluindo implantação de ambientes, Active Directory, políticas de domínio e serviços de infraestrutura.
 
-- [01 - Configuração de Estação Windows 11 para Novo Colaborador](./laboratorios/laboratorios-windows/01-configuracao-estacao-windows11)
-- [02 - Implantação do Windows Server 2025 como Controlador de Domínio](./laboratorios/laboratorios-windows/02-windows-server-active-directory)
-- [03 - Organização de Usuários e Grupos no Active Directory](./laboratorios/laboratorios-windows/03-organizacao-usuarios-grupos-active-directory)
+- [01 - Implantação Inicial de Ambiente Windows Corporativo Virtualizado](./laboratorios/laboratorios-windows/01-implantacao-ambiente-windows)
+- [02 - Organização de Usuários e Grupos no Active Directory](./laboratorios/laboratorios-windows/02-organizacao-usuarios-grupos-active-directory)
 
 ## 🐧 Laboratórios Linux
 
