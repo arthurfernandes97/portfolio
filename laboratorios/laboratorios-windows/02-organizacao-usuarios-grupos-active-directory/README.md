@@ -4,9 +4,9 @@
 
 Neste laboratório dei continuidade ao domínio `arthurtech.local`, organizando o Active Directory com Unidades Organizacionais (OUs), contas de usuário, grupos de segurança e restrições de logon por estação de trabalho.
 
-O objetivo foi organizar o domínio para facilitar a administração dos usuários e deixar o ambiente preparado para os próximos laboratórios envolvendo Group Policy (GPO), permissões NTFS e compartilhamentos de rede.
+O objetivo foi organizar o Active Directory para facilitar a administração dos usuários e deixar o ambiente preparado para os próximos laboratórios envolvendo Group Policy (GPO), permissões NTFS e compartilhamentos de rede.
 
-Para isso, reaproveitei o controlador de domínio [`SRV-TI-01`](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-windows/02-windows-server-active-directory), criado no laboratório anterior, e utilizei a estação [`WKS-TI-01`](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-windows/01-configuracao-estacao-windows11), ingressada no domínio, para validar as configurações implementadas.
+Para isso, reaproveitei o controlador de domínio **SRV-TI-01** e a estação **WKS-TI-01**, preparados no laboratório anterior, [Implantação Inicial de Ambiente Windows Corporativo Virtualizado](../01-implantacao-ambiente-windows/).
 
 ## Tecnologias utilizadas
 
@@ -22,7 +22,7 @@ Na área de TI, mantive todos os usuários na mesma OU, mas criei grupos de segu
 
 A distribuição final dos usuários ficou organizada da seguinte forma:
 
-```
+```text
 arthurtech.local
 
 ├── Diretoria (2 usuários)
@@ -48,19 +48,11 @@ Comecei organizando a estrutura do domínio. Criei uma OU exclusiva para a Diret
 
 ---
 
-## Etapa 2 - Ingresso da WKS-TI-01 no domínio
+## Etapa 2 - Organização da estação na OU TI
 
-Depois de configurar o endereço IP estático da estação e definir o DNS apontando para o controlador de domínio, ingressei a `WKS-TI-01` no domínio `arthurtech.local`.
+Como a **WKS-TI-01** já havia sido ingressada no domínio no laboratório anterior, o próximo passo foi organizar sua posição dentro do Active Directory.
 
-<p align="center">
-  <img src="imagens/02-ingresso-wks-ti-01-dominio.png" width="600">
-</p>
-
----
-
-## Etapa 3 - Organização da estação na OU TI
-
-Depois de adicionar a estação ao domínio, movi a `WKS-TI-01` da OU padrão `Computers` para a OU `TI`, deixando o ambiente preparado para a aplicação de GPOs nos próximos laboratórios.
+Movi a estação da OU padrão `Computers` para a OU `TI`, deixando o ambiente preparado para a aplicação de GPOs nos próximos laboratórios.
 
 <p align="center">
   <img src="imagens/03-wks-ti-ou.png" width="600">
@@ -68,7 +60,7 @@ Depois de adicionar a estação ao domínio, movi a `WKS-TI-01` da OU padrão `C
 
 ---
 
-## Etapa 4 - Criação das contas padrão
+## Etapa 3 - Criação das contas padrão
 
 Para evitar configurar cada usuário manualmente, criei uma conta padrão desabilitada em cada departamento. Essas contas servem como modelo para criar os usuários de cada departamento usando o recurso **Copy** do Active Directory.
 
@@ -86,7 +78,7 @@ Em cada conta configurei previamente horários de logon, restrição de estaçõ
 
 ---
 
-## Etapa 5 - Criação dos usuários da Diretoria
+## Etapa 4 - Criação dos usuários da Diretoria
 
 Como a Diretoria possui apenas dois usuários, optei por criá-los manualmente em vez de utilizar uma conta padrão.
 
@@ -102,9 +94,9 @@ Arthur Fernandes (Fundador e Diretor) e Carlos Martins (Sócio Diretor - nome fi
 
 ---
 
-## Etapa 6 - Provisionamento dos usuários
+## Etapa 5 - Provisionamento dos usuários
 
-Com as contas padrão prontas, utilizei o recurso **Copy** para criar os usuários de cada departamento, alterando apenas nome, sobrenome e senha.
+Com as contas padrão prontas, utilizei o recurso **Copy** para criar os usuários de cada departamento, alterando apenas os dados específicos de cada usuário, como nome, sobrenome e senha.
 
 Na OU `TI`, utilizei o campo **Description** para identificar quais usuários pertencem à equipe de Infraestrutura e quais fazem parte do Suporte Técnico.
 
@@ -120,7 +112,7 @@ Na OU `TI`, utilizei o campo **Description** para identificar quais usuários pe
 
 ---
 
-## Etapa 7 - Criação dos grupos de segurança
+## Etapa 6 - Criação dos grupos de segurança
 
 Criei todos os grupos como **Global** e **Security**. Cada departamento recebeu seu próprio grupo. No caso da TI, optei por manter grupos separados para `Infraestrutura` e `Suporte Técnico`.
 
@@ -133,17 +125,17 @@ Não adicionei as contas padrão aos grupos, já que elas servem apenas como mod
 ### Estrutura final de departamentos e grupos:
 
 <p align="center">
-  <img src="imagens/11-estrutura-departamentos-grupos.png" width="300">
+  <img src="imagens/11-estrutura-departamentos-grupos.png" width="450">
 </p>
 
 ---
 
-## Etapa 8 - Validação da troca obrigatória de senha
+## Etapa 7 - Validação da troca obrigatória de senha
 
 No primeiro logon com o usuário Lucas Gomes (TI), o Windows solicitou a alteração da senha antes de liberar o acesso ao domínio.
 
 <p align="center">
-  <img src="imagens/12-alteracao-senha-obrigatoria.png" width="1000">
+  <img src="imagens/12-alteracao-senha-obrigatoria.png" width="850">
 </p>
 
 <p align="center">
@@ -152,15 +144,15 @@ No primeiro logon com o usuário Lucas Gomes (TI), o Windows solicitou a altera�
 
 ---
 
-## Etapa 9 - Validação da restrição de logon por estação
+## Etapa 8 - Validação da restrição de logon por estação
 
-Para validar a restrição por estação de trabalho, utilizei a conta de Ana Moreira, pertencente ao departamento de `Administração`, e tentei realizar logon na `WKS-TI-01`.
+Para validar a restrição por estação de trabalho, utilizei a conta de Ana Moreira, pertencente ao departamento `Administração`, e tentei realizar logon na **WKS-TI-01**.
 
 <p align="center">
-  <img src="imagens/14-restricao-login-usuario-outro-departamento.png" width="1000">
+  <img src="imagens/14-restricao-login-usuario-outro-departamento.png" width="850">
 </p>
 
-Durante esse teste descobri um comportamento que eu não esperava. No teste com a usuária Ana Moreira, o sistema primeiro solicitou a alteração da senha e só depois informou que ela não tinha permissão para acessar a `WKS-TI-01`.
+Durante esse teste descobri um comportamento que não esperava. No teste com a usuária Ana Moreira, o sistema primeiro solicitou a alteração da senha e só depois informou que ela não tinha permissão para acessar a **WKS-TI-01**.
 
 Isso mostrou que o Windows verifica a troca obrigatória da senha antes de aplicar a restrição de logon configurada em `Log On To`.
 
@@ -168,9 +160,9 @@ Isso mostrou que o Windows verifica a troca obrigatória da senha antes de aplic
 
 ## Conclusão
 
-Com esse laboratório, o domínio `arthurtech.local` passou a ter uma estrutura organizada de OUs, usuários e grupos de segurança, pronta para receber GPOs, permissões NTFS e compartilhamentos de rede nos próximos laboratórios.
+Com este laboratório, o domínio `arthurtech.local` passou a ter uma estrutura organizada de OUs, usuários e grupos de segurança, pronta para receber GPOs, permissões NTFS e compartilhamentos de rede nos próximos laboratórios.
 
-Além de organizar essa estrutura, também validei a troca obrigatória de senha e a restrição de logon por estação, confirmando que as configurações estavam funcionando como esperado.
+Além da organização das OUs, usuários e grupos de segurança, também validei a troca obrigatória de senha e a restrição de logon por estação, confirmando que as configurações estavam funcionando como esperado.
 
 ## Autor
 
@@ -179,4 +171,4 @@ Além de organizar essa estrutura, também validei a troca obrigatória de senha
 Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
-[Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)
+[Arthur Fernandes](https://www.linkedin.com/in/arthurfernandes97)
