@@ -125,7 +125,7 @@ Não adicionei as contas padrão aos grupos, já que elas servem apenas como mod
 ### Estrutura final de departamentos e grupos:
 
 <p align="center">
-  <img src="imagens/11-estrutura-departamentos-grupos.png" width="450">
+  <img src="imagens/11-estrutura-departamentos-grupos.png" width="300">
 </p>
 
 ---
@@ -135,7 +135,7 @@ Não adicionei as contas padrão aos grupos, já que elas servem apenas como mod
 No primeiro logon com o usuário Lucas Gomes (TI), o Windows solicitou a alteração da senha antes de liberar o acesso ao domínio.
 
 <p align="center">
-  <img src="imagens/12-alteracao-senha-obrigatoria.png" width="850">
+  <img src="imagens/12-alteracao-senha-obrigatoria.png" width="1000">
 </p>
 
 <p align="center">
@@ -149,7 +149,7 @@ No primeiro logon com o usuário Lucas Gomes (TI), o Windows solicitou a altera�
 Para validar a restrição por estação de trabalho, utilizei a conta de Ana Moreira, pertencente ao departamento `Administração`, e tentei realizar logon na **WKS-TI-01**.
 
 <p align="center">
-  <img src="imagens/14-restricao-login-usuario-outro-departamento.png" width="850">
+  <img src="imagens/14-restricao-login-usuario-outro-departamento.png" width="1000">
 </p>
 
 Durante esse teste descobri um comportamento que não esperava. No teste com a usuária Ana Moreira, o sistema primeiro solicitou a alteração da senha e só depois informou que ela não tinha permissão para acessar a **WKS-TI-01**.
