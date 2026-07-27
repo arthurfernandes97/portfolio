@@ -16,22 +16,27 @@ Para isso, reaproveitei o controlador de domínio [`SRV-TI-01`](https://github.c
 
 ## Estrutura organizacional
 
-Para organizar a empresa fictícia `arthurtech`, mantive a Diretoria em uma OU própria, separada dos outros setores. Na equipe de TI, Infraestrutura e Suporte Técnico compartilham a mesma OU, mas possuem grupos de segurança distintos.
+A estrutura do domínio foi criada separando os usuários por setores da empresa. A Diretoria ficou em uma OU própria, enquanto os demais usuários foram organizados dentro da OU `Departamentos`.
+
+Na área de TI, mantive todos os usuários na mesma OU, mas criei grupos de segurança separados para diferenciar a equipe de Infraestrutura e o Suporte Técnico.
+
+A distribuição final dos usuários ficou organizada da seguinte forma:
 
 ```
 arthurtech.local
-├── Builtin, Computers, Domain Controllers, Users (nativas do Windows)
-├── Diretoria
-│   ├── Arthur Fernandes (Fundador e Diretor)
-│   └── Carlos Martins (Sócio Diretor)
+
+├── Diretoria (2 usuários)
+│   ├── Arthur Fernandes
+│   └── Carlos Martins
+│
 └── Departamentos
     ├── Administração (5 usuários)
     ├── Comercial (5 usuários)
-    ├── TI (8 usuários — 4 Infraestrutura + 4 Suporte Técnico)
-    └── RH (3 usuários)
+    ├── RH (3 usuários)
+    └── TI (8 usuários)
+        ├── Grupo: Infraestrutura (4 usuários)
+        └── Grupo: Suporte Técnico (4 usuários)
 ```
-
----
 
 ## Etapa 1 - Criação da estrutura de OUs
 
@@ -85,7 +90,7 @@ Em cada conta configurei previamente horários de logon, restrição de estaçõ
 
 Como a Diretoria possui apenas dois usuários, optei por criá-los manualmente em vez de utilizar uma conta padrão.
 
-Arthur Fernandes (Fundador e Diretor) e Carlos Martins (Sócio Diretor — nome fictício) representam a Diretoria, então deixei o logon liberado para qualquer estação do domínio.
+Arthur Fernandes (Fundador e Diretor) e Carlos Martins (Sócio Diretor - nome fictício) representam a Diretoria, então deixei o logon liberado para qualquer estação do domínio.
 
 <p align="center">
   <img src="imagens/06-usuario-diretoria.png" width="1000">
