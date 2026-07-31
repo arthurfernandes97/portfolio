@@ -146,6 +146,8 @@ Testei o acesso com dois usuários reais do domínio, logados no `WKS-TI-01`.
 <p align="center"><img src="./imagens/22-teste-acesso-financeiro-negado.png" width="850"></p>
 <p align="center"><img src="./imagens/23-teste-acesso-rh-sigiloso-negado.png" width="850"></p>
 
+---
+
 **Arthur Fernandes (Diretoria)**: acesso permitido em todas as pastas testadas, confirmando a permissão elevada configurada.
 
 <p align="center"><img src="./imagens/24-teste-acesso-diretoria-administracao-permitido.png" width="850"></p>
