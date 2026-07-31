@@ -171,8 +171,4 @@ Além da organização das OUs, usuários e grupos de segurança, também valide
 Estudante de Ciência da Computação, em transição de carreira para a área de TI (Suporte Técnico, Infraestrutura, Redes e NOC).
 
 **LinkedIn:**
-<<<<<<< HEAD
-[Arthur Fernandes](https://www.linkedin.com/in/arthurfernandes97)
-=======
 [Arthur Fernandes](https://www.linkedin.com/in/arthur-fernandes-289395272)
->>>>>>> a95e9ff (Ajustes adicionais)
