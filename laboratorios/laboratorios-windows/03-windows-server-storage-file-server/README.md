@@ -34,7 +34,7 @@ Em vez de criar um Storage Pool por departamento, optei por separar o armazename
 
 Criei quatro discos virtuais VDI de 10 GB no `SRV-TI-01`, dois para cada Storage Pool.
 
-<p align="center"><img src="./imagens/01-criacao-discos-virtuais.png" width="650"></p>
+<p align="center"><img src="./imagens/01-criacao-discos-virtuais.png" width="1000"></p>
 
 Ao tentar criar os pools pela interface gráfica, o Server Manager só reconhecia 1 dos 4 discos disponíveis, mesmo o PowerShell confirmando os 4 com `CanPool = True`.
 
@@ -79,11 +79,11 @@ Por esse motivo utilizei o layout Simple nos dois pools.
 
 Em um ambiente real, adicionaria mais discos para implementar um volume em Mirror no `Pool-Confidencial`. 
 
-<p align="center"><img src="./imagens/08-criacao-disco-virtual.png" width="850"></p>
+<p align="center"><img src="./imagens/08-criacao-disco-virtual.png" width="1000"></p>
 
 Em seguida criei os volumes, formatados em NTFS: `(E:)Confidencial` e `(F:)Operacional`.
 
-<p align="center"><img src="./imagens/09-criacao-volume.png" width="850"></p>
+<p align="center"><img src="./imagens/09-criacao-volume.png" width="1000"></p>
 <p align="center"><img src="./imagens/10-volumes-criados-explorador-arquivos.png" width="650"></p>
 
 ---
@@ -94,7 +94,7 @@ Dentro de cada volume, criei uma pasta por área:
 - `E:\Financeiro`, `E:\RH-Sigiloso`
 - `F:\Administracao`, `F:\Comercial`, `F:\TI`, `F:\Publica`
 
-<p align="center"><img src="./imagens/11-criacao-pastas.png" width="850"></p>
+<p align="center"><img src="./imagens/11-criacao-pastas.png" width="1000"></p>
 
 ---
 
@@ -114,13 +114,13 @@ Grupos com Full Control em cada pasta:
 
 A Diretoria tem acesso elevado a todas as pastas, refletindo a decisão tomada no laboratório anterior de não usar Domain Admins, e sim permissões pontuais pra demonstrar o princípio do menor privilégio.
 
-<p align="center"><img src="./imagens/12-administracao.png" width="850"></p>
-<p align="center"><img src="./imagens/13-comercial.png" width="850"></p>
-<p align="center"><img src="./imagens/14-ti.png" width="850"></p>
-<p align="center"><img src="./imagens/15-publica.png" width="850"></p>
-<p align="center"><img src="./imagens/16-financeiro.png" width="850"></p>
-<p align="center"><img src="./imagens/17-rh-sigiloso.png" width="850"></p>
-<p align="center"><img src="./imagens/18-compartilhamentos-criados.png" width="850"></p>
+<p align="center"><img src="./imagens/12-administracao.png" width="1000"></p>
+<p align="center"><img src="./imagens/13-comercial.png" width="1000"></p>
+<p align="center"><img src="./imagens/14-ti.png" width="1000"></p>
+<p align="center"><img src="./imagens/15-publica.png" width="1000"></p>
+<p align="center"><img src="./imagens/16-financeiro.png" width="1000"></p>
+<p align="center"><img src="./imagens/17-rh-sigiloso.png" width="1000"></p>
+<p align="center"><img src="./imagens/18-compartilhamentos-criados.png" width="1000"></p>
 
 ---
 
@@ -141,17 +141,17 @@ Testei o acesso com dois usuários reais do domínio, logados no `WKS-TI-01`.
 
 **Priscila Oliveira (grupo TI)**: acesso permitido à própria pasta (`TI`), negado nas demais (`Administracao`, `Financeiro$`, `RH-Sigiloso$`).
 
-<p align="center"><img src="./imagens/20-teste-acesso-ti-permitido.png" width="650"></p>
-<p align="center"><img src="./imagens/21-teste-acesso-administracao-negado.png" width="650"></p>
-<p align="center"><img src="./imagens/22-teste-acesso-financeiro-negado.png" width="650"></p>
-<p align="center"><img src="./imagens/23-teste-acesso-rh-sigiloso-negado.png" width="650"></p>
+<p align="center"><img src="./imagens/20-teste-acesso-ti-permitido.png" width="850"></p>
+<p align="center"><img src="./imagens/21-teste-acesso-administracao-negado.png" width="850"></p>
+<p align="center"><img src="./imagens/22-teste-acesso-financeiro-negado.png" width="850"></p>
+<p align="center"><img src="./imagens/23-teste-acesso-rh-sigiloso-negado.png" width="850"></p>
 
 **Arthur Fernandes (Diretoria)**: acesso permitido em todas as pastas testadas, confirmando a permissão elevada configurada.
 
-<p align="center"><img src="./imagens/24-teste-acesso-diretoria-administracao-permitido.png" width="650"></p>
-<p align="center"><img src="./imagens/25-teste-acesso-diretoria-ti-permitido.png" width="650"></p>
-<p align="center"><img src="./imagens/26-teste-acesso-diretoria-financeiro-permitido.png" width="650"></p>
-<p align="center"><img src="./imagens/27-teste-acesso-diretoria-rh-sigiloso-permitido.png" width="650"></p>
+<p align="center"><img src="./imagens/24-teste-acesso-diretoria-administracao-permitido.png" width="850"></p>
+<p align="center"><img src="./imagens/25-teste-acesso-diretoria-ti-permitido.png" width="850"></p>
+<p align="center"><img src="./imagens/26-teste-acesso-diretoria-financeiro-permitido.png" width="850"></p>
+<p align="center"><img src="./imagens/27-teste-acesso-diretoria-rh-sigiloso-permitido.png" width="850"></p>
 
 Os testes com `Financeiro$` e `RH-Sigiloso$` foram realizados informando o caminho UNC diretamente, já que esses compartilhamentos não aparecem durante a navegação pela rede.
 
