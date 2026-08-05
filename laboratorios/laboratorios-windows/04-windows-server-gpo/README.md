@@ -25,8 +25,8 @@ Criei a GPO `Mapeamento-Compartilhamentos` vinculada na OU `Departamentos`, e co
 
 Antes de chegar nesse formato, testei uma abordagem diferente: criar uma GPO separada para cada OU de departamento, vinculada diretamente nela. Funcionava, mas gerava uma GPO por departamento sem necessidade. Optei então por uma única GPO com item-level targeting, filtrando por grupo de segurança dentro dos próprios itens de Drive Map, o que deixa a administração mais centralizada.
 
-<p align="center"><img src="imagens/01-criacao-gpo-mapeamento.png" width="850"></p>
-<p align="center"><img src="imagens/02-configuracao-drive-targeting.png" width="850"></p>
+<p align="center"><img src="imagens/01-criacao-gpo-mapeamento.png" width="650"></p>
+<p align="center"><img src="imagens/02-configuracao-drive-targeting.png" width="1000"></p>
 
 ---
 
@@ -48,7 +48,7 @@ O primeiro foi tentar colocar mais de um grupo no mesmo campo do seletor de obje
 O segundo, mais importante, foi o operador lógico entre os itens de grupo. Ao adicionar múltiplos grupos no mesmo drive, por padrão, o operador lógico entre eles é **AND**, o que exige que o usuário seja membro de todos os grupos ao mesmo tempo para receber o mapeamento, algo que na prática nunca acontece. Troquei o operador para **OR** em cada item com mais de um grupo, incluindo o grupo Diretoria em todos os drives departamentais (já que a Diretoria tem acesso liberado a todos os compartilhamentos, conforme configurado no laboratório de File Server).
 
 <p align="center"><img src="imagens/03-item-level-targeting-departamentos.png" width="850"></p>
-<p align="center"><img src="imagens/04-lista-drive-maps-concluida.png" width="850"></p>
+<p align="center"><img src="imagens/04-lista-drive-maps-concluida.png" width="650"></p>
 
 ---
 
@@ -74,7 +74,7 @@ Configurei a Password Policy na Default Domain Policy com os seguintes parâmetr
 | Maximum password age | 42 dias |
 | Minimum password age | 1 dia |
 
-<p align="center"><img src="imagens/06-politica-senhas-default-domain.png" width="850"></p>
+<p align="center"><img src="imagens/06-politica-senhas-default-domain.png" width="650"></p>
 
 ---
 
@@ -89,7 +89,7 @@ Como complemento à política de senhas, configurei a Account Lockout Policy, pa
 | Reset account lockout counter after | 30 minutos |
 | Allow Administrator account lockout | Enabled |
 
-<p align="center"><img src="imagens/07-politica-lockout-default-domain.png" width="850"></p>
+<p align="center"><img src="imagens/07-politica-lockout-default-domain.png" width="650"></p>
 
 ---
 
