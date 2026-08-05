@@ -45,6 +45,7 @@ Laboratórios práticos de administração de sistemas Windows, incluindo implan
 - [01 - Implantação Inicial de Ambiente Windows Corporativo Virtualizado](./laboratorios/laboratorios-windows/01-implantacao-ambiente-windows)
 - [02 - Organização de Usuários e Grupos no Active Directory](./laboratorios/laboratorios-windows/02-organizacao-usuarios-grupos-active-directory)
 - [03 - Storage Pools, File Server e Permissões no Active Directory](./laboratorios/laboratorios-windows/03-windows-server-storage-file-server)
+- [04 - GPO: Mapeamento de Unidades de Rede e Políticas de Segurança](./laboratorios/laboratorios-windows/04-windows-server-gpo)
 
 ## 🐧 Laboratórios Linux
 
