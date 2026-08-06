@@ -172,6 +172,12 @@ Esse laboratório me mostrou como o roteamento estático se comporta numa topolo
 
 O ponto mais importante foi a correção da ACL. Uma ACL que bloqueia algumas origens e libera o resto no final não é a mesma coisa que uma ACL que permite só uma origem específica. A primeira deixa brecha pra qualquer rede nova que apareça depois, como aconteceu com a Filial. Além disso, aprendi que o lugar onde a ACL é aplicada importa tanto quanto a lógica dela. Ela precisa estar no ponto por onde todo o tráfego destinado ao servidor obrigatoriamente passa, não apenas na origem que motivou a regra originalmente.
 
+## Arquivos do laboratório
+
+Caso queira reproduzir a configuração, o arquivo do Cisco Packet Tracer está disponível para download neste diretório.
+
+- [roteamento-estatico-matriz-filial-isp.pkt](./roteamento-estatico-matriz-filial-isp.pkt)
+
 ## Autor
 
 **Arthur Fernandes**

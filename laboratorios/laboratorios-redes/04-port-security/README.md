@@ -138,6 +138,12 @@ Esse lab me mostrou que Port Security trabalha numa camada diferente da ACL: enq
 
 O ponto mais importante foi entender que a violação não se resolve sozinha. Mesmo reconectando o dispositivo certo, com o MAC batendo na tabela `sticky`, a porta continua bloqueada até alguém reiniciar ela manualmente com `shutdown` / `no shutdown`. Isso me mostrou que Port Security é uma ferramenta de contenção, não corrige o problema automaticamente, só impede o acesso até alguém agir.
 
+## Arquivos do laboratório
+
+Caso queira reproduzir a configuração, o arquivo do Cisco Packet Tracer está disponível para download neste diretório.
+
+- [port-security.pkt](./port-security.pkt)
+
 ## Autor
 
 **Arthur Fernandes**
