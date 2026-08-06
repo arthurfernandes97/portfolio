@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Neste laboratório reaproveitei a topologia do lab [Port Security](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/04-port-security), dando continuidade à estrutura de rede dos projetos anteriores para interligar a Matriz a uma nova unidade remota (Filial), utilizando roteamento estático através de um roteador que simula um ISP.
+Neste laboratório reaproveitei a topologia do lab [Port Security](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/03-port-security), dando continuidade à estrutura de rede dos projetos anteriores para interligar a Matriz a uma nova unidade remota (Filial), utilizando roteamento estático através de um roteador que simula um ISP.
 
 ## Tecnologias utilizadas
 
@@ -117,7 +117,7 @@ ip route 192.168.50.0 255.255.255.0 200.200.201.2
 <img src="imagens/11-teste-ping-multiplas-vlans-filial.png" width="1000">
 </p>
 
-Ao testar a conectividade com a Filial, percebi que os hosts remotos também conseguiam acessar o servidor (172.16.40.0/24), e lembrei que isso não deveria acontecer, já que em um dos laboratórios anteriores [(ACL entre VLANs: Restrição de Acesso ao Servidor)](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/03-acl-restricao-servidor), a minha intenção era restringir esse acesso apenas à VLAN de TI.
+Ao testar a conectividade com a Filial, percebi que os hosts remotos também conseguiam acessar o servidor (172.16.40.0/24), e lembrei que isso não deveria acontecer, já que em um dos laboratórios anteriores [(ACL entre VLANs: Restrição de Acesso ao Servidor)](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/02-acl-restricao-servidor), a minha intenção era restringir esse acesso apenas à VLAN de TI.
 
 
 ---

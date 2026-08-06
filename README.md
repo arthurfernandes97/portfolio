@@ -23,11 +23,10 @@ Este repositório reúne laboratórios práticos que venho desenvolvendo enquant
 
 Laboratórios de redes de computadores utilizando Cisco Packet Tracer, abordando VLANs, roteamento, DHCP Relay, ACL e segurança em switches.
 
-- [01 - Roteamento Inter-VLAN](./laboratorios/laboratorios-redes/01-inter-vlan)
-- [02 - DHCP Relay com Múltiplas VLANs](./laboratorios/laboratorios-redes/02-dhcp-relay-vlans)
-- [03 - ACL: Restrição de Acesso ao Servidor](./laboratorios/laboratorios-redes/03-acl-restricao-servidor)
-- [04 - Port Security](./laboratorios/laboratorios-redes/04-port-security)
-- [05 - Roteamento Estático: Interligação de Filial via ISP](./laboratorios/laboratorios-redes/05-roteamento-estatico-matriz-filial-isp)
+- [01 - DHCP Relay com Múltiplas VLANs](./laboratorios/laboratorios-redes/01-dhcp-relay-vlans)
+- [02 - ACL: Restrição de Acesso ao Servidor](./laboratorios/laboratorios-redes/02-acl-restricao-servidor)
+- [03 - Port Security](./laboratorios/laboratorios-redes/03-port-security)
+- [04 - Roteamento Estático: Interligação de Filial via ISP](./laboratorios/laboratorios-redes/04-roteamento-estatico-matriz-filial-isp)
 
 ## 🦈 Análise de Tráfego
 

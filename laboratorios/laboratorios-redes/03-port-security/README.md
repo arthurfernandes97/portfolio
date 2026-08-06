@@ -1,7 +1,8 @@
+
 <h1 align="center">Port Security</h1>
 
 ## Objetivo
-Nesse laboratório reaproveitei a topologia do lab [ACL entre VLANs: Restrição de Acesso ao Servidor](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/03-acl-restricao-servidor), dando continuidade na mesma estrutura de rede para implementar `Port Security` nos switches.
+Nesse laboratório reaproveitei a topologia do lab [ACL entre VLANs: Restrição de Acesso ao Servidor](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/02-acl-restricao-servidor), dando continuidade na mesma estrutura de rede para implementar `Port Security` nos switches.
 
 A ideia foi impedir que outros dispositivos, diferentes dos que já estavam conectados, conseguissem acesso à rede pelas portas configuradas com `Port Security`.
 
