@@ -139,7 +139,7 @@ O ponto mais importante foi a ACL de exclusão. Sem ela, o NAT ia traduzir tamb�
 
 Caso queira reproduzir a configuração, o arquivo do Cisco Packet Tracer está disponível para download neste diretório.
 
-- [lab-nat-overload-matriz-filial.pkt](./lab-nat-overload-matriz-filial.pkt)
+- [nat-overload-matriz-filial.pkt](./nat-overload-matriz-filial.pkt)
 
 ## Autor
 
