@@ -34,7 +34,7 @@ Antes de configurar qualquer coisa, precisava de um jeito de provar que o NAT es
 Adicionei uma interface loopback no roteador do ISP com o IP `8.8.8.8/32`, simulando um destino externo qualquer. Esse endereço passou a ser meu alvo de teste pra internet.
 
 <p align="center">
-<img src="imagens/02-config-loopback-isp.png" width="1000">
+<img src="imagens/02-config-loopback-isp.png" width="700">
 </p>
 
 ---
@@ -50,7 +50,7 @@ Na Filial é mais direto, só uma interface de LAN (inside) e uma de saída pro 
 </p>
 
 <p align="center">
-<img src="imagens/04-config-nat-inside-outside-filial.png" width="1000">
+<img src="imagens/04-config-nat-inside-outside-filial.png" width="850">
 </p>
 
 ---
@@ -80,7 +80,7 @@ ip nat inside source list 100 interface GigabitEthernet0/0/1 overload
 </p>
 
 <p align="center">
-<img src="imagens/06-config-acl-nat-overload-filial.png" width="1000">
+<img src="imagens/06-config-acl-nat-overload-filial.png" width="850">
 </p>
 
 ---
@@ -90,11 +90,11 @@ ip nat inside source list 100 interface GigabitEthernet0/0/1 overload
 Primeiro, testei o ping de um host da Filial até `8.8.8.8`. O `show ip nat translations` mostrou 4 entradas, uma por requisição ICMP, todas com o mesmo IP público da Filial mas portas diferentes.
 
 <p align="center">
-<img src="imagens/07-teste-ping-filial-internet.png" width="1000">
+<img src="imagens/07-teste-ping-filial-internet.png" width="700">
 </p>
 
 <p align="center">
-<img src="imagens/08-nat-translations-filial-internet.png" width="1000">
+<img src="imagens/08-nat-translations-filial-internet.png" width="700">
 </p>
 
 Na minha primeira tentativa de capturar esse print, a tabela apareceu vazia mesmo com o ping tendo funcionado. O timeout padrão do NAT pra ICMP é curto, e a tradução já tinha expirado antes de eu rodar o comando. Refiz o teste rodando os dois comandos em sequência, sem pausa, e consegui capturar a tabela ainda ativa.
@@ -102,29 +102,29 @@ Na minha primeira tentativa de capturar esse print, a tabela apareceu vazia mesm
 Depois, testei o ping de um host da Filial até um host da Matriz. A tabela de NAT continuou sem nenhuma entrada nova, confirmando que esse tráfego não passa pela tradução.
 
 <p align="center">
-<img src="imagens/09-teste-ping-filial-matriz.png" width="1000">
+<img src="imagens/09-teste-ping-filial-matriz.png" width="700">
 </p>
 
 <p align="center">
-<img src="imagens/10-nat-translations-filial-matriz-vazia.png" width="1000">
+<img src="imagens/10-nat-translations-filial-matriz-vazia.png" width="700">
 </p>
 
 Repeti os dois testes em um host da Matriz.
 
 <p align="center">
-<img src="imagens/11-teste-ping-matriz-internet.png" width="1000">
+<img src="imagens/11-teste-ping-matriz-internet.png" width="700">
 </p>
 
 <p align="center">
-<img src="imagens/12-nat-translations-matriz-internet.png" width="1000">
+<img src="imagens/12-nat-translations-matriz-internet.png" width="700">
 </p>
 
 <p align="center">
-<img src="imagens/13-teste-ping-matriz-filial.png" width="1000">
+<img src="imagens/13-teste-ping-matriz-filial.png" width="700">
 </p>
 
 <p align="center">
-<img src="imagens/14-nat-translations-matriz-filial-vazia.png" width="1000">
+<img src="imagens/14-nat-translations-matriz-filial-vazia.png" width="700">
 </p>
 
 ---
