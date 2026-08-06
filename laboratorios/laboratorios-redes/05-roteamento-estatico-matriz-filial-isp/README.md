@@ -1,7 +1,8 @@
 <h1 align="center">Roteamento Estático: Interligação de Filial via ISP</h1>
 
 ## Objetivo
-Neste laboratório dei continuidade à estrutura de rede dos projetos anteriores para interligar a Matriz a uma nova unidade remota (Filial), utilizando roteamento estático através de um roteador que simula um ISP.
+
+Neste laboratório reaproveitei a topologia do lab [Port Security](https://github.com/arthurfernandes97/portfolio/tree/main/laboratorios/laboratorios-redes/04-port-security), dando continuidade à estrutura de rede dos projetos anteriores para interligar a Matriz a uma nova unidade remota (Filial), utilizando roteamento estático através de um roteador que simula um ISP.
 
 ## Tecnologias utilizadas
 
