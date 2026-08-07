@@ -27,6 +27,7 @@ Laboratórios de redes de computadores utilizando Cisco Packet Tracer, abordando
 - [02 - ACL: Restrição de Acesso ao Servidor](./laboratorios/laboratorios-redes/02-acl-restricao-servidor)
 - [03 - Port Security](./laboratorios/laboratorios-redes/03-port-security)
 - [04 - Roteamento Estático: Interligação de Filial via ISP](./laboratorios/laboratorios-redes/04-roteamento-estatico-matriz-filial-isp)
+- [05 - NAT Overload (PAT): Matriz e Filial](./laboratorios/laboratorios-redes/05-nat-overload-matriz-filial)
 
 ## 🦈 Análise de Tráfego
 
